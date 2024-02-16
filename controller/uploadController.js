@@ -12,7 +12,6 @@ import LOB from "../model/policyCategoryModel.js";
 import Carrier from "../model/carrierModel.js";
 import Policy from "../model/policyModel.js";
 import Lob from "../model/policyCategoryModel.js";
-// import { ObjectId } from "mongoose";
 
 const upload = async (req, res) => {
   const __filename = fileURLToPath(import.meta.url);

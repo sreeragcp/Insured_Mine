@@ -3,11 +3,9 @@ import Policy from "../model/policyModel.js";
 
 const searchByUsername = async (req, res) => {
   const { username } = req.params;
-  console.log(username, "thsi si the username");
 
   try {
     const user = await User.findOne({ firstName: username });
-    console.log(user, "this is the uerr");
 
     if (!user) {
       return res.status(404).json({ message: "User not found" });
